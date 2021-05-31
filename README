@@ -1,0 +1,45 @@
+Aurasim is a Pre-compiled parameterized package for creating a web server with system login.
+
+
+Premise
+Do not modify the folders and files contained within these directories:
+    - /tool/html
+    - /tool/css 
+    - /tool/classes
+    - /tool/code
+    - /tool/prg
+
+The "tool" directory contains the scripts needed to create webserver configurations (eg: password for connection to the DB).
+
+
+
+/****************************************************************/
+
+
+
+METHODOLOGY
+
+[Server side]
+
+The system is developed in different classes which cooperate with each other, each carrying out different operations.
+
+Connection to a MySQL Database
+Declare the following sessions in the "env / env.php" file:
+
+    - $_SESSION['CONN']['SRV']['MYSQL']['HOST'] = host name / IP Address
+    - $_SESSION['CONN']['SRV']['MYSQL']['DB']   = DB Name
+    - $_SESSION['CONN']['SRV']['MYSQL']['USER'] = User DB
+    - $_SESSION['CONN']['SRV']['MYSQL']['PSW']  = Enter the DB password after entering it in the "tool / html / EncriptFLE.php" script
+    - $_SESSION['CONN']['SRV']['MYSQL']['CHARSET'] = Charset for yoru connection;
+
+
+Connection to a MSSQL Database (SQL Server)
+Declare the following sessions in the "env / env.php" file:
+
+    - $_SESSION['CONN']['SRV']['MSSQL']['HOST'] = host name / IP Address
+    - $_SESSION['CONN']['SRV']['MSSQL']['HOST'] = host name / IP Address
+    - $_SESSION['CONN']['SRV']['MSSQL']['DB']   = DB Name
+    - $_SESSION['CONN']['SRV']['MSSQL']['USER'] = User DB
+    - $_SESSION['CONN']['SRV']['MSSQL']['PSW']  = Enter the DB password after entering it in the "tool / html / EncriptFLE.php" script
+    - $_SESSION['CONN']['SRV']['MSSQL']['CHARSET'] = Charset for yoru connection;
+
