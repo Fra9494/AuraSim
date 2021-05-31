@@ -34,13 +34,13 @@ setlocale(LC_ALL,$LANG);
                     </tr>
                     <tr>
                         <td>
-                            <input id="FGUBTN" type="submit" class="btn" value="Change Username" >
+                            <input id="FGUBTN" type="submit"  value="Change Username" >
                         </td>
                     </tr>
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td><a href="login.php" style="text-decoration: none; color:#4583a0; font-weight: bold; font-style: Verdana; font-size: 10pt;">Back to login page</a></td>
+                        <td><a href="login.php" style="text-decoration: none; color:#636363; font-weight: bold; font-style: Verdana; font-size: 10pt;">Back to login page</a></td>
                     </tr>
                 </table>
                 

@@ -40,7 +40,7 @@ setlocale(LC_ALL,$LANG);
                     <tr></tr>
                     <tr></tr>
                     <tr>
-                        <td><a href="login.php" style="text-decoration: none; color:#4583a0; font-weight: bold; font-style: Verdana; font-size: 10pt;">Back to login page</a></td>
+                        <td><a href="login.php" style="text-decoration: none; color:#636363; font-weight: bold; font-style: Verdana; font-size: 10pt;">Back to login page</a></td>
                     </tr>
                 </table>
                 

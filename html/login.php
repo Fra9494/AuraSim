@@ -31,7 +31,7 @@ setlocale(LC_ALL,$LANG);
                     </tr>
                     <tr>
                         <td>
-                            <input id="LGNBTN" type="submit" class="bhtn" value="Login" >
+                            <input id="LGNBTN" type="submit" value="Login" >
                         </td>
                     </tr>
                     <tr></tr>
