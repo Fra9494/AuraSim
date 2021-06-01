@@ -19,6 +19,24 @@ The "tool" directory contains the scripts needed to create webserver configurati
 
 METHODOLOGY
 
+
+Before declaring the various parameters below, create a database and a user table on your server, then specify the table name with the respective field names in the "cnf.php" file.
+The users table must be structured having these fields:
+
+- ID
+- First name
+- Surname
+- Username
+- Password
+- Mail
+- Last access
+- Type of users
+- User status
+
+
+
+
+
 [Server side]
 
 The system is developed in different classes which cooperate with each other, each carrying out different operations.
@@ -42,4 +60,91 @@ Declare the following sessions in the "env / env.php" file:
     - $_SESSION['CONN']['SRV']['MSSQL']['USER'] = User DB
     - $_SESSION['CONN']['SRV']['MSSQL']['PSW']  = Enter the DB password after entering it in the "tool / html / EncriptFLE.php" script
     - $_SESSION['CONN']['SRV']['MSSQL']['CHARSET'] = Charset for yoru connection;
+
+
+
+
+
+
+Connection parameter 
+Declare the parameters for the platform configuration in "config/cnf.php"
+
+There are the parameter in "config/cnf.php":
+
+ /******** Head information ********/
+
+        $TITLE = 'Aurasim'; //Title of System
+        $LOGO_PATH ='../docs/img/LogoAuraSim.PNG'; //Path to the site logo (optional)
+        $LOGO_WIDTH = '55px'; //Width to the site logo
+        $LOGO_HEIGHT = '55px'; //Height to the site logo
+        $LOGO_MARGINTOP = '1px'; //Margin top to the site logo
+        $TIMEZONE = 'Europe/Rome'; //Timezone to the site
+        $LANG = 'IT'; //Language to the site
+        
+    
+/**********************************/
+
+
+
+    /******** DB information ********/
+    
+        $TIPECONNECTION = 'mysql'; //Connection type of SQL DB
+        $LENPSWDB = '8'; //Database password length
+
+        /*** {Users Table} ***/
+
+            //Users table: create this table with the fields in this order
+            $TABLEUSERS = 'TBUSERS'; //name of users table
+
+
+
+        /* [FIELD] */
+            $FIELDID = 'id'; //ID of record {INT}
+            $FIELDNAME = 'name'; //Name user {TEXT}
+            $FIELDSURNAME = 'surname'; //Surname user {TEXT}
+            $FIELDUSERNAME = 'username'; //Username user {TEXT}
+            $FIELDPASSWORD = 'psw'; //Password user {TEXT}
+            $FIELDMAIL = 'mail'; //Mail user {TEXT}
+            $FIELDLACCESS = 'last_access'; //Date of last access user {DATE}
+            $FIELDTYPEUSER = 'type'; //User's type {VARCHAR length=1} -> default value="U or A"
+            $FIELDSTATUS = 'status'; //User's status (enabled or disabled) {VARCHAR length=1} -> default value="Y or N"
+
+        /*******/
+
+
+
+
+[Client side]
+
+When all the parameters for the system configuration have been set, a starting platform will be available that will allow:
+
+- New user registration
+- Password / username change
+- Login
+
+All files can be customized (css, js, html etc).
+It is advisable not to modify any file related to user management (server side).
+
+DO NOT MODIFY ANY FILE / FOLDER WITHIN THE TOOL
+
+
+/**************************************************************************************************************************************/
+
+
+STEP BY STEP
+
+1- Create a specific database and user table (based on the characteristics specified above)
+2- Clone the "AuraSim" repository on your server
+3- Edit the "env / env.php" and "config / cnf.php" files following the instructions above
+4- Change the style of the platform to your liking (optional)
+5- Modify server-side operations if necessary (optional)
+6- Test the platform (user management, login, default homepage)
+
+
+/**************************************************************************************************************************************/
+
+
+
+
+
 
