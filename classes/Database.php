@@ -30,7 +30,7 @@ class Database
                 $id = $rt[$FIELDID] + 1;
 
                 //Sha256 password
-                $pswSHA = hash('sha256',$_POST['LgnTxtP']);
+                $pswSHA = hash('sha256',$password);
                 //data
                 $date = date('Y-m-d');
                 $insertUser = " INSERT INTO $TABLEUSERS($FIELDID,$FIELDNAME,$FIELDSURNAME,$FIELDUSERNAME,$FIELDPASSWORD,$FIELDMAIL,$FIELDLACCESS,$FIELDTYPEUSER,$FIELDSTATUS)
@@ -53,7 +53,7 @@ class Database
                 $id = $rt[$FIELDID] + 1;
 
                 //Sha256 password
-                $pswSHA = hash('sha256',$_POST['LgnTxtP']);
+                $pswSHA = hash('sha256',$password);
                 //data
                 $date = date('Y-m-d');
                 $insertUser = " INSERT INTO $TABLEUSERS($FIELDID,$FIELDNAME,$FIELDSURNAME,$FIELDUSERNAME,$FIELDPASSWORD,$FIELDMAIL,$FIELDLACCESS,$FIELDTYPEUSER,$FIELDSTATUS)

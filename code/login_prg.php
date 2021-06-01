@@ -12,7 +12,7 @@ $SS = new SessionManage();
 /* Query of connection */
 $pswSHA = hash('sha256',$_POST['LgnTxtP']);
 $QQ = "SELECT * FROM $TABLEUSERS WHERE $FIELDUSERNAME = '".$_POST['LgnTxtU']."' AND $FIELDPASSWORD = '".$pswSHA."'";
-
+echo $QQ;
 
 if(mysqli_num_rows($EN->connectSetInsert($QQ))>0)
 {
@@ -25,10 +25,12 @@ if(mysqli_num_rows($EN->connectSetInsert($QQ))>0)
 }
 else
 {
+    
     echo "<script>
             alert('Wrong Username or Password incorrect !');
             window.location.href='../html/login.php';
           </script>";
+    
     exit;
 }
 
