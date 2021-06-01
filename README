@@ -1,5 +1,5 @@
 Aurasim is a Pre-compiled parameterized package for creating a web server with system login.
-
+All passwords (database and user passwords) are encrypted in sha256, this to ensure the security of the platform
 
 Premise
 Do not modify the folders and files contained within these directories:
