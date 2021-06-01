@@ -62,6 +62,5 @@ function execAjax(target,msg,op,pars,ondone,parsB,parFunRet)
 
 function setOpacity(div,val)
 {
-    alert('seui');
     document.getElementById(div).style.opacity = val;
 }
