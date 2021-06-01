@@ -112,6 +112,7 @@ Version: 0.1
     height: 50px;
     background: #737373;
 	border-radius: 50px;
+	border:1px solid #737373;
 	color:#F2F2F2;
 	margin-left:95%;
 	margin-top:5px;
@@ -127,12 +128,15 @@ Version: 0.1
 	width: auto; /* Set a width if you like */
 	display:none;
 	cursor:pointer;
+	background: #737373;
 	height:auto;
 	margin-top: 60px;
 	position: absolute;
 	margin-left: 86%;
 	font-size: 12pt;
     font-family: Verdana;
+	opacity: 1px;
+	position: absolute;
 	}
 
 	.vertical-menu a {
@@ -154,3 +158,4 @@ Version: 0.1
 	 background-color: #4CAF50; /* Add a green color to the "active/current" link */
 	color: white;
 	}
+

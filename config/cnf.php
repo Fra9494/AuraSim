@@ -3,10 +3,13 @@
     /******** Head information ********/
 
         $TITLE = 'Aurasim';
-        $LOGO_PATH ='/img/logo.png';
+        $LOGO_PATH ='../docs/img/LogoAuraSim.PNG';
+        $LOGO_WIDTH = '55px';
+        $LOGO_HEIGHT = '55px';
+        $LOGO_MARGINTOP = '1px';
         $TIMEZONE = 'Europe/Rome';
         $LANG = 'IT';
-        $LENPSWDB = '8'; //Database password length
+        
     
     /**********************************/
 
@@ -15,6 +18,7 @@
     /******** DB information ********/
     
         $TIPECONNECTION = 'mysql';
+        $LENPSWDB = '8'; //Database password length
 
         /*** {Users Table} ***/
 

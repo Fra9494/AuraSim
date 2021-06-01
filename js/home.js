@@ -59,3 +59,9 @@ function execAjax(target,msg,op,pars,ondone,parsB,parFunRet)
     ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     ajax.send('OP='+op+'&param='+pars);
 }
+
+function setOpacity(div,val)
+{
+    alert('seui');
+    document.getElementById(div).style.opacity = val;
+}

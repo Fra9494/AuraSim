@@ -20,8 +20,18 @@ session_start ();
    
     <body>
       <nav id='menu'>
+      
         <ul>
-          <li><a href='#' onclick="reloadPage();">Home</a></li>
+          <?php
+            if( $LOGO_PATH !== '')
+            {
+              echo "<li>
+                      <img src='$LOGO_PATH' width='$LOGO_WIDTH' height='$LOGO_HEIGHT' style='margin-top: $LOGO_MARGINTOP;'>";
+              echo "  <span id='spanSpace' width='50px;'></span>
+                    </li>";
+            }
+          ?>
+          <li><a href='#' onclick="reloadPage('home.php');">Home</a></li>
           <li><a class='dropdown-arrow' href='http://'>Utility</a>
               <ul class='sub-menus'>
                 <li><a href='http://'>Sub Menu 1</a></li>
@@ -40,7 +50,7 @@ session_start ();
           <li><a href='http://'>About</a></li>
           <li><a href='http://'>Contact Us</a></li>
         </ul>
-        <div id="DivAccount" class="accountLogged" onclick="showDiv('vm');" >
+        <div id="DivAccount" class="accountLogged" onclick="showDiv('vm'); setOpacity('pages','0,5');" >
             <?php
               echo '<b>'.strtoupper(substr($_SESSION['SRV']['SESSION']['CONNECTION']['NAME'],0,1)).strtoupper(substr($_SESSION['SRV']['SESSION']['CONNECTION']['SURNAME'],0,1)).'</b>';
             ?>
@@ -48,7 +58,16 @@ session_start ();
         
       </nav>
       <div id="vm" class="vertical-menu" onmouseout="hideDiv('vm');">
-                <a href='#' onclick="execAjax('',false,'accountLogout','','reloadPage','../html/login.php',false);"><b>Logout</b></a>
-        </div>      
+                <a href='#' onclick="execAjax('',false,'accountLogout','','reloadPage','../html/login.php',false);">Logout</a>
+      </div>
+        <iframe id="pages" 
+            style="position:absolute;
+            width:90%; 
+            height: 85%; 
+            left:5%;
+            top:14%; 
+            opacity:1;">
+            AAAAAA
+        </iframe>      
     </body>
 </html>
