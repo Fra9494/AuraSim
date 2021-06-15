@@ -32,24 +32,24 @@ session_start ();
                     </li>";
             }
           ?>
-          <li><a href='#' onclick="reloadPage('home.php');">Home</a></li>
-          <li><a class='dropdown-arrow' href='http://'>Utility</a>
+          <li><a href="#" onclick="reloadPage('home.php');">Home</a></li>
+          <li><a class='dropdown-arrow' href="#">Utility</a>
               <ul class='sub-menus'>
-                <li><a href='http://'>Sub Menu 1</a></li>
-                <li><a href='http://'>Sub Menu 2</a></li>
-                <li><a href='http://'>Sub Menu 3</a></li>
-                <li><a href='http://'>Sub Menu 4</a></li>
+                <li><a href="#">Sub Menu 1</a></li>
+                <li><a href="#">Sub Menu 2</a></li>
+                <li><a href="#">Sub Menu 3</a></li>
+                <li><a href="#">Sub Menu 4</a></li>
               </ul>
           </li>
-          <li><a class='dropdown-arrow' href='http://'>Services</a>
+          <li><a class='dropdown-arrow' href="#">Services</a>
               <ul class='sub-menus'>
                 <li><a href="#" onclick="loadDIV('usersManagement.php','pages');">Users Management</a></li>
-                <li><a href='http://'>Sub Menu 2</a></li>
-                <li><a href='http://'>Sub Menu 3</a></li>
+                <li><a href="#" >Sub Menu 2</a></li>
+                <li><a href="#" >Sub Menu 3</a></li>
               </ul>
           </li>
-          <li><a href='http://'>About</a></li>
-          <li><a href='http://'>Contact Us</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
         <div id="DivAccount" class="accountLogged" onclick="showDiv('vm'); setOpacity('pages','0,5');" >
             <?php
