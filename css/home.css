@@ -159,3 +159,7 @@ Version: 0.1
 	color: white;
 	}
 
+	body
+	{
+		overflow: auto;
+	}

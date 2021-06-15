@@ -4,6 +4,10 @@ include ('../classes/Database.php');
 
 $LA = new Database();
 
+$_POST['RegTxtU'] = addslashes($_POST['RegTxtU']);
+$_POST['RegTxtN'] = addslashes($_POST['RegTxtN']);
+$_POST['RegTxtS'] = addslashes($_POST['RegTxtS']);
+
 //Validate registration
 if($LA -> validateRegistration($_POST['RegTxtU'],$_POST['RegTxtM']) === 0)
 {

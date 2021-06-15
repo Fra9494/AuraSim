@@ -13,6 +13,7 @@ setlocale(LC_ALL,$LANG);
         <title><?php echo $TITLE; ?></title>
         <link rel="stylesheet" type="text/css" media="screen" href="../css/forgotUsername.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="../css/btn.css" />
+        <link rel="icon" href="<?php echo $LOGO_PATH; ?>" type="image/icon type">
         <script type="text/javascript" src="../js/app.js"></script>
     </head>
 

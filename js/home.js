@@ -64,3 +64,12 @@ function setOpacity(div,val)
 {
     document.getElementById(div).style.opacity = val;
 }
+
+function loadDIV(script,div)
+{ 
+    //Controllo lo stato del webserver
+    execAjax('pages',false,'stateSite','',false,'',false);
+    var ifrm = document.getElementById(div);
+    ifrm.src = script;
+
+}

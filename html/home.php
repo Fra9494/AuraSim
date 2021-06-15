@@ -15,6 +15,7 @@ session_start ();
         <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
         <title><?php echo $TITLE; ?></title>
         <link rel="stylesheet" type="text/css" media="screen" href="../css/home.css">
+        <link rel="icon" href="<?php echo $LOGO_PATH; ?>" type="image/icon type">
         <script type="text/javascript" src="../js/home.js"></script>
     </head>
    
@@ -42,7 +43,7 @@ session_start ();
           </li>
           <li><a class='dropdown-arrow' href='http://'>Services</a>
               <ul class='sub-menus'>
-                <li><a href='http://'>Sub Menu 1</a></li>
+                <li><a href="#" onclick="loadDIV('usersManagement.php','pages');">Users Management</a></li>
                 <li><a href='http://'>Sub Menu 2</a></li>
                 <li><a href='http://'>Sub Menu 3</a></li>
               </ul>
@@ -66,8 +67,8 @@ session_start ();
             height: 85%; 
             left:5%;
             top:14%; 
-            opacity:1;">
-            AAAAAA
+            opacity:1;" frameborder="0">
+            
         </iframe>      
     </body>
 </html>

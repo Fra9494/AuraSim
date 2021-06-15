@@ -3,7 +3,7 @@
 include ('../classes/Database.php');
 
 $LA = new Database();
-
+$_POST['FgpTxtU'] = addslashes($_POST['FgpTxtU']);
 
 
 if($LA -> validateRegistration($_POST['FgpTxtU'],$_POST['FgpTxtM']) === 0)

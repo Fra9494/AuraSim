@@ -121,6 +121,7 @@ When all the parameters for the system configuration have been set, a starting p
 - New user registration
 - Password / username change
 - Login
+- Users Management (insert, delete, modify) at platform
 
 All files can be customized (css, js, html etc).
 It is advisable not to modify any file related to user management (server side).
@@ -138,7 +139,7 @@ STEP BY STEP
 3- Edit the "env / env.php" and "config / cnf.php" files following the instructions above
 4- Change the style of the platform to your liking (optional)
 5- Modify server-side operations if necessary (optional)
-6- Test the platform (user management, login, default homepage)
+6- Test the platform (user management, login, default homepage, users management)
 
 
 /**************************************************************************************************************************************/
